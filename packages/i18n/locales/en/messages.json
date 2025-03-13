@@ -1,0 +1,39 @@
+{
+  "extensionDescription": {
+    "description": "Extension description",
+    "message": "BASS - Browser Agentic Script Sprite"
+  },
+  "extensionName": {
+    "description": "Extension name",
+    "message": "BASS"
+  },
+  "toggleTheme": {
+    "message": "Toggle theme"
+  },
+  "loading": {
+    "message": "Loading..."
+  },
+  "greeting": {
+    "description": "Greeting message",
+    "message": "Hello, My name is $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "John Doe"
+      }
+    }
+  },
+  "hello": {
+    "description": "Placeholder example",
+    "message": "Hello $1"
+  },
+  "common_add": {
+    "message": "Add"
+  },
+  "common_history": {
+    "message": "History"
+  },
+  "common_settings": {
+    "message": "Settings"
+  }
+}
