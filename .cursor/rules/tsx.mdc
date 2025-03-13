@@ -1,0 +1,15 @@
+---
+description: ui file root rules
+globs: *.tsx
+alwaysApply: true
+---
+# ui file root rules
+- @package.json
+- The project is a chrome extension
+- only use pnpm to install dependencies and devDependencies
+
+# a word prefix with ':' is a command:
+:cc - save the size and position of style, only remove color style
+:cs - save the color and position of style, only remove size style
+:fu - up one level of front size
+:fd - down one level of front size

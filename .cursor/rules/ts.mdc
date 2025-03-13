@@ -1,0 +1,11 @@
+---
+description: typescript file root rules
+globs: *.ts
+alwaysApply: true
+---
+# typescript file root rules
+- @package.json
+- only use pnpm to install dependencies and devDependencies
+
+# a word prefix with ':' is a command:
+:log - Incorporate logs of appropriate levels at suitable locations within the code.
