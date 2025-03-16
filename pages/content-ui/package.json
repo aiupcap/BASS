@@ -1,0 +1,44 @@
+{
+  "name": "@bass/content-ui",
+  "version": "0.0.1",
+  "description": "bass - content ui",
+  "type": "module",
+  "private": true,
+  "sideEffects": true,
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "clean:bundle": "rimraf dist",
+    "clean:node_modules": "pnpx rimraf node_modules",
+    "clean:turbo": "rimraf .turbo",
+    "clean": "pnpm clean:bundle && pnpm clean:node_modules && pnpm clean:turbo",
+    "ready": "pnpm tailwindcss -i ./src/tailwind-input.css -o ./dist/tailwind-output.css -m",
+    "build": "pnpm ready && vite build",
+    "dev": "vite build --mode development",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "prettier": "prettier . --write --ignore-path ../../.prettierignore",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@bass/env": "workspace:*",
+    "@bass/shared": "workspace:*",
+    "@bass/storage": "workspace:*",
+    "@bass/ui": "workspace:*",
+    "@bass/i18n": "workspace:*",
+    "lucide-react": "^0.475.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@bass/hmr": "workspace:*",
+    "@bass/tailwindcss-config": "workspace:*",
+    "@bass/tsconfig": "workspace:*",
+    "@bass/vite-config": "workspace:*",
+    "typescript": "^5.7.3"
+  }
+}

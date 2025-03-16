@@ -1,0 +1,13 @@
+{
+  "extends": "@bass/tsconfig/base",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"],
+      "@bass/ui/*": ["../../packages/ui/src/*"]
+    },
+    "types": ["chrome", "node"]
+  },
+  "include": ["src", "vite.config.mts"],
+  "exclude": ["node_modules", "dist"]
+}

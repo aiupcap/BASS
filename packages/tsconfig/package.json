@@ -1,0 +1,7 @@
+{
+  "name": "@bass/tsconfig",
+  "version": "0.0.1",
+  "description": "bass - tsconfig",
+  "private": true,
+  "sideEffects": false
+}

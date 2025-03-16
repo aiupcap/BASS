@@ -1,0 +1,44 @@
+{
+  "name": "bass",
+  "version": "0.0.1",
+  "description": "Browser Agentic Script Spride",
+  "type": "module",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "clean:node_modules": "pnpx rimraf node_modules",
+    "clean:turbo": "rimraf .turbo",
+    "clean": "pnpm clean:turbo && pnpm clean:node_modules",
+    "ready": "tsc -b pre-build.tsconfig.json",
+    "build": "vite build",
+    "dev": "vite build --mode development",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix",
+    "prettier": "prettier . --write --ignore-path ../.prettierignore",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@bass/env": "workspace:*",
+    "@bass/shared": "workspace:*",
+    "@bass/storage": "workspace:*",
+    "@langchain/anthropic": "^0.3.15",
+    "@langchain/core": "^0.3.42",
+    "@langchain/deepseek": "^0.0.1",
+    "@langchain/groq": "^0.1.3",
+    "@langchain/openai": "^0.4.4",
+    "puppeteer-core": "^24.4.0",
+    "vite-plugin-node-polyfills": "^0.23.0",
+    "webextension-polyfill": "^0.12.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@bass/dev-utils": "workspace:*",
+    "@bass/hmr": "workspace:*",
+    "@bass/tsconfig": "workspace:*",
+    "@bass/vite-config": "workspace:*",
+    "@laynezh/vite-plugin-lib-assets": "^0.6.1",
+    "magic-string": "^0.30.17",
+    "ts-loader": "^9.5.2"
+  }
+}
