@@ -128,10 +128,10 @@ git clone https://github.com/peace0phmind/BASS.git
 cd bass
 
 # Install dependencies
-npm install
+pnpm install
 
 # Start the development server
-npm run dev
+pnpm dev
 ```
 
 ## Documentation
@@ -175,13 +175,13 @@ This project can be packaged as a Chrome extension. Follow these steps:
 
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
 # Package the Chrome extension
-npm run build:extension
+pnpm build
 ```
 
-After packaging, the extension files will be generated in the `dist-extension` directory.
+After packaging, the extension files will be generated in the `dist` directory.
 
 ### Install the Extension
 
@@ -189,5 +189,5 @@ After packaging, the extension files will be generated in the `dist-extension` d
 2. Go to `chrome://extensions/`
 3. Enable "Developer mode" in the top right corner
 4. Click "Load unpacked"
-5. Select the `dist-extension` directory in the project
+5. Select the `dist` directory in the project
 

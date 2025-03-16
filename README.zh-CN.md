@@ -128,10 +128,10 @@ git clone https://github.com/peace0phmind/BASS.git
 cd bass
 
 # 安装依赖
-npm install
+pnpm install
 
 # 启动开发服务器
-npm run dev
+pnpm dev
 ```
 
 ## 文档
@@ -175,13 +175,13 @@ BASS基于现代技术栈构建，包括：
 
 ```bash
 # 安装依赖
-npm install
+pnpm install
 
 # 打包 Chrome 扩展
-npm run build:extension
+pnpm build
 ```
 
-打包完成后，扩展文件将在 `dist-extension` 目录中生成。
+打包完成后，扩展文件将在 `dist` 目录中生成。
 
 ### 安装扩展
 
@@ -189,4 +189,4 @@ npm run build:extension
 2. 进入 `chrome://extensions/` 页面
 3. 开启右上角的 "开发者模式"
 4. 点击 "加载已解压的扩展程序"
-5. 选择项目中的 `dist-extension` 目录
+5. 选择项目中的 `dist` 目录
